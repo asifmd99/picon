@@ -1,0 +1,93 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;  
+  /*  padding margin add krne pe content ka size chota hojye likin box ka size same
+
+*/
+}
+
+#wrapper{
+  height:100vh;
+  overflow-x:hidden;
+  overflow-y:auto;
+}
+
+.container{
+  height:100%;
+  max-width:1200px;    /*   jyada content dalo ge toh  block sirf 1200px tak reh pyega*/
+  margin:0 auto;  /*       left and right side mai aisa margin lgaya jata h ki content center mai ajye */
+      
+  padding:20px;
+}
+
+.container h1{
+  margin: 20px 100px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;    
+  /* sare elemnt horizont mai ajyega agar ni kiya 
+  agar wo same row mai place ni hoskte to niche ajyenge*/
+  justify-content: space-between;
+}
+
+
+.card {
+  width:32%;
+  position:relative;    
+  /* image ke uper h ise liye */
+  margin-bottom: 20px;
+  border-radius: 10px;
+  /* corner ko rounded krne ke liye */
+  overflow: hidden;
+}
+/* height ni dala as flex k=mai content dalane se jitna size h whi height hojata */
+ 
+.card img{
+  
+  width:100%;
+  height:100%;
+  /* agar ye ni hota to corner ata abb rounded ayega */
+  filter: grayscale(100%);
+  box-shadow: 0 0 20px #333;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  transition: 0.5s;
+  filter: drop-shadow(0 0 10px #333);
+/* applies drop shadow effect to input image */
+  /* box-shadow: 0 0 10px #333 ; */
+}
+
+
+.card:hover img {
+  filter: grayscale(0%);
+}
+
+.card figcaption{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px;
+  width: 100%;
+  height: 20%;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  opacity: 0;
+  border-radius: 0 0 10px 10px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+  transition: 0.3s;
+}
+
+.card:hover figcaption {
+  opacity: 1;
+  transform: scale(1.03);
+}  
