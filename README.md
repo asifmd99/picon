@@ -1,2 +1,2 @@
 # picon
-A photography website
+"Unleash your passion for photography and explore a world of captivating visuals. This photography website is a curated platform that celebrates the art of capturing moments and telling stories through the lens. Immerse yourself in a stunning collection of images that range from awe-inspiring landscapes to intimate portraits, each one meticulously crafted to evoke emotions and spark inspiration. Whether you're a professional photographer or an admirer of visual artistry, our website offers a captivating experience where you can discover, learn, and connect with a vibrant community of like-minded enthusiasts. Uncover the beauty of photography and let your imagination soar as you embark on a visual journey like no other."
